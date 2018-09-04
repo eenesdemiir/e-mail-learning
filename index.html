@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/animate.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="shortcut icon" type="text/css" href="images/logo.jpg">
+<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/jquery.js"></script>
+<meta charset="utf-8">
+
+<!--PAGE EFFETCS!-->
+<META http-equiv=content-type content=text/html;charset=iso-8859-9> <!--İE 10!-->
+<META http-equiv=content-type content=text/html;charset=windows-1254>
+<META http-equiv=content-type content=text/html;charset=x-mac-turkish>
+
+
+</head>
+<body>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<button id="myBtn"><i class="fa fa-book" aria-hidden="true"></i>
+</button>
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h3><i class="fa fa-envelope-open" aria-hidden="true"></i>  Uygulama Hakkında</h3>
+    </div>
+    <div class="modal-body">
+
+      <p>Bu uygulama sayesinde e-mail kullanmayı ve e-mail açmayı öğreneceksiniz,</p>
+      <p>Üstelik eğitimlere göz attıktan sonra sınav butonuna tıklayarak kendinizi test edebilirsiniz.</p>
+      <p>Ayrıca sisteme bir kullanıcının e-posta'sını kaydedip daha sonra ismini veya soy ismini yazarak e-mailine ulaşabilirsiniz.</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Kolay Gelsin;</h3>
+    </div>
+  </div>
+
+</div>
+
+<script>
+var modal = document.getElementById('myModal');
+
+var btn = document.getElementById("myBtn");
+
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+
+<br>
+<h2 class="animated fadeInRight">E-mail Sorgulama</h2>
+<p class="animated fadeInRight">İlk adlar, soyadlar veya e-postalar için tabloda aratmak için giriş alanına bir şey yazın: </p>  
+
+<input class="btnnn animated fadeInRight" id="myInput" type="text" placeholder="Ara..">
+<br><br>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<table>
+  <thead>
+    <tr>
+      <th class="animated flash">Ad</th>
+      <th class="animated flash">Soyad</th>
+      <th class="animated flash">E-mail</th>
+    </tr>
+  </thead>
+  <tbody id="myTable">
+    <tr>
+      <td class="animated flash">Erdem</td>
+      <td class="animated flash">Kanber</td>
+      <td class="animated flash">erdem.kanber@anzera.com.tr</td>
+    </tr>
+    <tr>
+      <td class="animated flash">Emrah</td>
+      <td class="animated flash">Erol</td>
+      <td class="animated flash">emrah.erol@anzera.com.tr</td>
+    </tr>
+   
+    <tr>
+      <td class="animated flash">Sevgi</td>
+      <td class="animated flash">Tanyaş</td>
+      <td class="animated flash">sevgi.tanyas@anzera.com.tr</td>
+    </tr>
+    <tr>
+      <td class="animated flash">Çağrı</td>
+      <td class="animated flash">Çakır</td>
+      <td class="animated flash">cagri.cakir@anzera.com.tr</td>
+    </tr> 
+    <tr>
+      <td class="animated flash">Enes</td>
+      <td class="animated flash">Demir</td>
+      <td class="animated flash">enes.demir@anzera.com.tr</td>
+    </tr>
+    <tr>
+      <td class="animated flash">Önder</td>
+      <td class="animated flash">Yıldırım</td>
+      <td class="animated flash">onder.yildirim@anzera.com.tr</td>
+    </tr>
+    <tr>
+     <td class="animated flash">Hatice</td>
+      <td class="animated flash">Ata</td>
+      <td class="animated flash">hatice.ata@anzera.com.tr</td>
+    </tr>
+
+  </tbody>
+</table>
+
+		</div>
+	</div>
+</div>
+
+
+<div class="w3-container">
+
+<h2 class="animated fadeInRight">Uyarılar!</h2>
+<p class="animated fadeInRight">Uyarıları kapatmak için sağ üst köşedeki X işaretine tıklayın:</p>
+
+<div class="animated rubberBand w3-panel w3-red w3-display-container">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-red w3-large w3-display-topright">&times;</span>
+  <h3 class="animated rubberBand">E-posta iletisi</h3>
+  <p class="animated rubberBand">Gönderen kişinin adını, konuyu ve iletinin ilk iki satırını gösterir. Masaüstü Uyarısı, şifreli veya dijital imzalı iletilerin içeriklerini göstermez. İletiyi görüntülemek için, e-postayı açmanız gerekir.</p>
+</div>
+
+<div class="animated rubberBand w3-panel w3-yellow w3-display-container">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-yellow w3-large w3-display-topright">&times;</span>
+  <h3 class="animated rubberBand">Toplantı isteği</h3>
+  <p class="animated rubberBand">Gönderen kişiyi, konuyu ve toplantının tarih, saat ve konumunu gösterir.</p>
+</div>
+
+<div class="animated rubberBand w3-panel w3-green w3-display-container">
+  <span onclick="this.parentElement.style.display='none'"
+  class="w3-button w3-green w3-large w3-display-topright">&times;</span>
+  <h3 class="animated rubberBand">Görev isteği</h3>
+  <p class="animated rubberBand">Gönderen kişiyi ,konuyu ve atanan görevin başlangıç tarihini gösterir.</p>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div  class="col-lg-4 col-lg-4 col-lg-4 col-md-4 col-md-4 col-md-4 col-sm-4 col-sm-4 col-sm-4 col-xs-4 col-xs-4 col-xs-4">
+			
+<video controls="controls" class="animated rubberBand">
+<source src="video/video.mp4" type="video/mp4">
+<source src="movie.ogg" type="video/ogg">  
+Tarayıcınız video etiketini desteklemiyor.
+</video>
+
+<video controls="controls" class="animated rubberBand">
+ <source src="video/video.mp4" type="video/mp4">
+ <source src="movie.ogg" type="video/ogg">
+Tarayıcınız video etiketini desteklemiyor.
+</video>
+
+<video controls="controls" class="animated rubberBand">
+<source src="video/video.mp4" type="video/mp4">
+<source src="movie.ogg" type="video/ogg">  
+Tarayıcınız video etiketini desteklemiyor.
+</video>
+
+		</div>
+	</div>
+</div>
+<div class="container">
+  <div class="row">
+	   <div class="col-lg-offset-5 col-lg-2 col-lg-offset-5">
+
+  <div class="bg">
+    <div class="centerer">
+      
+      <a href="quiz.html" class="animated fadeInRight button">QUİZ <i class="fa fa-fighter-jet" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  </div>
+</div>
+
+
+
+<meta http-equiv="Page-Enter" content="progid:DXImageTransform.Microsoft.Gradientwipe(duration=2,irisStyle=star)">
+
+
+
+<!--<p style="text-align: center; font-weight: bold; margin-top: 150px;">@2018 Bu Sitenin Hakları Saklıdır</p>
+!-->
+</body>
+</html>
